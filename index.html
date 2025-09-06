@@ -449,11 +449,12 @@
               </div>
             </div>
 
-            <!-- Slider -->
+           <!-- Slider -->
             <div class="order-1 lg:order-2">
               <div
                 class="slider w-full max-w-xl mx-auto aspect-[1/1] md:aspect-[4/3] bg-white/10 rounded-2xl shadow-2xl border-4 border-white/20"
               >
+                <!-- Remote 1 -->
                 <picture class="slide active">
                   <source
                     srcset="
@@ -471,6 +472,7 @@
                   />
                 </picture>
 
+                <!-- Remote 2 -->
                 <picture class="slide">
                   <source
                     srcset="
@@ -487,28 +489,118 @@
                   />
                 </picture>
 
+                <!-- Local gallery 1–6 (same directory as index.html) -->
+                <picture class="slide">
+                  <source srcset="./1.jpg" type="image/jpeg" />
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    class="object-cover w-full h-full"
+                    src="./1.jpg"
+                    alt="Nadia Rahman Onnesha — photo 3"
+                  />
+                </picture>
+
+                <picture class="slide">
+                  <source srcset="./2.jpg" type="image/jpeg" />
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    class="object-cover w-full h-full"
+                    src="./2.jpg"
+                    alt="Nadia Rahman Onnesha — photo 4"
+                  />
+                </picture>
+
+                <picture class="slide">
+                  <source srcset="./3.jpg" type="image/jpeg" />
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    class="object-cover w-full h-full"
+                    src="./3.jpg"
+                    alt="Nadia Rahman Onnesha — photo 5"
+                  />
+                </picture>
+
+                <picture class="slide">
+                  <source srcset="./4.jpg" type="image/jpeg" />
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    class="object-cover w-full h-full"
+                    src="./4.jpg"
+                    alt="Nadia Rahman Onnesha — photo 6"
+                  />
+                </picture>
+
+                <picture class="slide">
+                  <source srcset="./5.jpg" type="image/jpeg" />
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    class="object-cover w-full h-full"
+                    src="./5.jpg"
+                    alt="Nadia Rahman Onnesha — photo 7"
+                  />
+                </picture>
+
+                <picture class="slide">
+                  <source srcset="./6.jpg" type="image/jpeg" />
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    class="object-cover w-full h-full"
+                    src="./6.jpg"
+                    alt="Nadia Rahman Onnesha — photo 8"
+                  />
+                </picture>
+
+                <!-- Controls -->
                 <button
                   id="prevSlide"
                   class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/35 hover:bg-black/50 text-white p-2 rounded-full"
+                  aria-label="Previous slide"
                 >
-                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+                  <svg
+                    class="w-5 h-5"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
                   </svg>
                 </button>
                 <button
                   id="nextSlide"
                   class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/35 hover:bg-black/50 text-white p-2 rounded-full"
+                  aria-label="Next slide"
                 >
-                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z" />
+                  <svg
+                    class="w-5 h-5"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path d="M8.59 16.59 10 18l6-6-6-6-1.41 1.41L13.17 12z" />
                   </svg>
                 </button>
+
+                <!-- Dots (match slide count: 8) -->
                 <div
                   class="absolute bottom-3 left-0 right-0 flex items-center justify-center gap-2"
                 >
-                  <span class="dot active"></span><span class="dot"></span>
+                  <span class="dot active"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
                 </div>
               </div>
+
               <!-- Center aligned ballot under slider -->
               <div class="mt-4 w-full flex justify-center">
                 <div
