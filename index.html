@@ -978,6 +978,203 @@
         </div>
       </section>
 
+      <!-- =======================
+     PHOTO GALLERY
+     ======================= -->
+      <section id="gallery" class="section-padding">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-8">
+            <h2
+              class="text-3xl md:text-4xl font-extrabold text-[var(--brand-navy)]"
+            >
+              <span data-bn="ছবি গ্যালারি" data-en="Photo Gallery"
+                >ছবি গ্যালারি</span
+              >
+            </h2>
+            <p class="text-slate-600 mt-2">
+              <span data-bn="" data-en=""></span>
+            </p>
+          </div>
+
+          <!-- Grid -->
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4">
+            <!-- 1 -->
+            <figure
+              class="gradient-card rounded-xl overflow-hidden card-hover cursor-zoom-in"
+            >
+              <img
+                src="./1.jpg"
+                alt="Gallery 1"
+                loading="lazy"
+                decoding="async"
+                class="w-full h-40 sm:h-52 md:h-56 object-cover"
+                data-lightbox-index="0"
+              />
+            </figure>
+            <!-- 2 -->
+            <figure
+              class="gradient-card rounded-xl overflow-hidden card-hover cursor-zoom-in"
+            >
+              <img
+                src="./2.jpg"
+                alt="Gallery 2"
+                loading="lazy"
+                decoding="async"
+                class="w-full h-40 sm:h-52 md:h-56 object-cover"
+                data-lightbox-index="1"
+              />
+            </figure>
+            <!-- 3 -->
+            <figure
+              class="gradient-card rounded-xl overflow-hidden card-hover cursor-zoom-in"
+            >
+              <img
+                src="./3.jpg"
+                alt="Gallery 3"
+                loading="lazy"
+                decoding="async"
+                class="w-full h-40 sm:h-52 md:h-56 object-cover"
+                data-lightbox-index="2"
+              />
+            </figure>
+            <!-- 4 -->
+            <figure
+              class="gradient-card rounded-xl overflow-hidden card-hover cursor-zoom-in"
+            >
+              <img
+                src="./4.jpg"
+                alt="Gallery 4"
+                loading="lazy"
+                decoding="async"
+                class="w-full h-40 sm:h-52 md:h-56 object-cover"
+                data-lightbox-index="3"
+              />
+            </figure>
+            <!-- 5 -->
+            <figure
+              class="gradient-card rounded-xl overflow-hidden card-hover cursor-zoom-in"
+            >
+              <img
+                src="./5.jpg"
+                alt="Gallery 5"
+                loading="lazy"
+                decoding="async"
+                class="w-full h-40 sm:h-52 md:h-56 object-cover"
+                data-lightbox-index="4"
+              />
+            </figure>
+            <!-- 6 -->
+            <figure
+              class="gradient-card rounded-xl overflow-hidden card-hover cursor-zoom-in"
+            >
+              <img
+                src="./6.jpg"
+                alt="Gallery 6"
+                loading="lazy"
+                decoding="async"
+                class="w-full h-40 sm:h-52 md:h-56 object-cover"
+                data-lightbox-index="5"
+              />
+            </figure>
+          </div>
+        </div>
+
+        <!-- Lightbox -->
+        <div id="lb" class="fixed inset-0 bg-black/90 hidden z-50">
+          <button
+            id="lbClose"
+            class="absolute top-3 right-3 p-2 rounded-lg bg-white/10 hover:bg-white/20"
+          >
+            <svg
+              class="w-6 h-6 text-white"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M18.3 5.71 12 12l6.3 6.29-1.41 1.42L10.59 13.4 4.3 19.71 2.89 18.3 9.17 12 2.89 5.71 4.3 4.29 10.59 10.6 16.89 4.29z"
+              />
+            </svg>
+          </button>
+          <button
+            id="lbPrev"
+            class="absolute left-3 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white/10 hover:bg-white/20"
+          >
+            <svg
+              class="w-6 h-6 text-white"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+            </svg>
+          </button>
+          <button
+            id="lbNext"
+            class="absolute right-3 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white/10 hover:bg-white/20"
+          >
+            <svg
+              class="w-6 h-6 text-white"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path d="m8.59 16.59 1.41 1.41 6-6-6-6-1.41 1.41L13.17 12z" />
+            </svg>
+          </button>
+
+          <div class="h-full w-full grid place-items-center px-4">
+            <img
+              id="lbImg"
+              src=""
+              alt="Preview"
+              class="max-h-[88vh] w-auto object-contain rounded-xl shadow-2xl"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- =======================
+     VIDEO (1.mp4)
+     ======================= -->
+      <section id="video" class="section-padding bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-6">
+            <h2
+              class="text-3xl md:text-4xl font-extrabold text-[var(--brand-navy)]"
+            >
+              <span data-bn="ভিডিও বার্তা" data-en="Video Message"
+                >ভিডিও বার্তা</span
+              >
+            </h2>
+            <p class="text-slate-600 mt-2">
+              <span
+                data-bn="নাদিয়া রহমান অণ্বেষা — Ballot 03"
+                data-en="Nadia Rahman Onnesha — Ballot 03"
+                >নাদিয়া রহমান অণ্বেষা — Ballot 03</span
+              >
+            </p>
+          </div>
+
+          <div
+            class="gradient-card rounded-2xl overflow-hidden shadow-lg border border-gray-200"
+          >
+            <div class="w-full aspect-[16/9] bg-black">
+              <video
+                class="w-full h-full"
+                controls
+                preload="metadata"
+                playsinline
+              >
+                <source src="./1.mp4" type="video/mp4" />
+                <!-- Fallback -->
+                <track kind="captions" srclang="en" label="English" />
+                <p class="p-4 text-white">
+                  Your browser does not support the video tag.
+                </p>
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Volunteer & Quick Contacts -->
       <section id="volunteer" class="section-padding">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1454,6 +1651,87 @@ Interests: ${interests}`;
           const text = encodeURIComponent(msgBn + "\n\n" + msgEn);
           window.open(`https://wa.me/${dest}?text=${text}`, "_blank");
         });
+      })();
+    </script>
+
+    <!-- Lightbox JS (no dependencies) -->
+    <script>
+      (function () {
+        const images = [
+          "./1.jpg",
+          "./2.jpg",
+          "./3.jpg",
+          "./4.jpg",
+          "./5.jpg",
+          "./6.jpg",
+        ];
+        const thumbs = document.querySelectorAll("[data-lightbox-index]");
+        const lb = document.getElementById("lb");
+        const lbImg = document.getElementById("lbImg");
+        const btnPrev = document.getElementById("lbPrev");
+        const btnNext = document.getElementById("lbNext");
+        const btnClose = document.getElementById("lbClose");
+        let i = 0,
+          touchStartX = 0;
+
+        function open(index) {
+          i = index;
+          lbImg.src = images[i];
+          lb.classList.remove("hidden");
+          document.body.style.overflow = "hidden";
+        }
+        function close() {
+          lb.classList.add("hidden");
+          lbImg.src = "";
+          document.body.style.overflow = "";
+        }
+        function prev() {
+          i = (i - 1 + images.length) % images.length;
+          lbImg.src = images[i];
+        }
+        function next() {
+          i = (i + 1) % images.length;
+          lbImg.src = images[i];
+        }
+
+        thumbs.forEach((t) => {
+          t.addEventListener("click", () =>
+            open(parseInt(t.dataset.lightboxIndex, 10))
+          );
+        });
+        btnClose.addEventListener("click", close);
+        btnPrev.addEventListener("click", prev);
+        btnNext.addEventListener("click", next);
+        lb.addEventListener("click", (e) => {
+          if (e.target === lb) close();
+        });
+
+        // Keyboard
+        document.addEventListener("keydown", (e) => {
+          if (lb.classList.contains("hidden")) return;
+          if (e.key === "Escape") close();
+          if (e.key === "ArrowLeft") prev();
+          if (e.key === "ArrowRight") next();
+        });
+
+        // Touch swipe (mobile)
+        lb.addEventListener(
+          "touchstart",
+          (e) => {
+            touchStartX = e.changedTouches[0].clientX;
+          },
+          { passive: true }
+        );
+        lb.addEventListener(
+          "touchend",
+          (e) => {
+            const dx = e.changedTouches[0].clientX - touchStartX;
+            if (Math.abs(dx) > 40) {
+              dx > 0 ? prev() : next();
+            }
+          },
+          { passive: true }
+        );
       })();
     </script>
   </body>
