@@ -19,6 +19,9 @@
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- Video.js (CSS) -->
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+
     <!-- Fonts: Bengali (Hind Siliguri — closest to Noto Sans Bengali), English (Inter) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -1159,7 +1162,7 @@
       </section>
 
       <!-- =======================
-     VIDEO (1.mp4)
+     VIDEO (2-per-row + last one alone)
      ======================= -->
       <section id="video" class="section-padding bg-white">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1174,97 +1177,115 @@
             </p>
           </div>
 
-          <div
-            class="gradient-card rounded-2xl overflow-hidden shadow-lg border border-gray-200"
-          >
-            <div class="w-full aspect-[16/9] bg-black">
+          <!-- GRID (2 per row). EXCLUDES the 2nd video -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <!-- v1 -->
+            <div
+              class="gradient-card rounded-2xl overflow-hidden shadow-lg border border-gray-200 p-3"
+            >
               <video
-                class="w-full h-full"
+                id="v1"
+                class="video-js vjs-default-skin vjs-fluid w-full h-full"
                 controls
                 preload="metadata"
                 playsinline
+                webkit-playsinline
+                data-setup='{"fluid": true, "aspectRatio":"16:9", "preload":"metadata"}'
               >
                 <source src="./1.mp4" type="video/mp4" />
-                <!-- Fallback -->
-                <track kind="captions" srclang="en" label="English" />
-                <p class="p-4 text-white">
-                  Your browser does not support the video tag.
-                </p>
+                <p class="p-4">Your browser does not support the video tag.</p>
               </video>
+            </div>
 
-              <!-- Video 2 -->
+            <!-- v3 -->
+            <div
+              class="gradient-card rounded-2xl overflow-hidden shadow-lg border border-gray-200 p-3"
+            >
               <video
-                class="w-full h-full"
+                id="v3"
+                class="video-js vjs-default-skin vjs-fluid w-full h-full"
                 controls
                 preload="metadata"
                 playsinline
-              >
-                <source src="./2.mp4" type="video/mp4" />
-                <!-- Fallback -->
-                <track kind="captions" srclang="en" label="English" />
-                <p class="p-4 text-white">
-                  Your browser does not support the video tag.
-                </p>
-              </video>
-
-              <!-- Video 3 -->
-              <video
-                class="w-full h-full"
-                controls
-                preload="metadata"
-                playsinline
+                webkit-playsinline
+                data-setup='{"fluid": true, "aspectRatio":"16:9", "preload":"metadata"}'
               >
                 <source src="./01.mp4" type="video/mp4" />
-                <!-- Fallback -->
-                <track kind="captions" srclang="en" label="English" />
-                <p class="p-4 text-white">
-                  Your browser does not support the video tag.
-                </p>
+                <p class="p-4">Your browser does not support the video tag.</p>
               </video>
+            </div>
 
-              <!-- Video 4 -->
+            <!-- v4 -->
+            <div
+              class="gradient-card rounded-2xl overflow-hidden shadow-lg border border-gray-200 p-3"
+            >
               <video
-                class="w-full h-full"
+                id="v4"
+                class="video-js vjs-default-skin vjs-fluid w-full h-full"
                 controls
                 preload="metadata"
                 playsinline
+                webkit-playsinline
+                data-setup='{"fluid": true, "aspectRatio":"16:9", "preload":"metadata"}'
               >
                 <source src="./02.mp4" type="video/mp4" />
-                <!-- Fallback -->
-                <track kind="captions" srclang="en" label="English" />
-                <p class="p-4 text-white">
-                  Your browser does not support the video tag.
-                </p>
+                <p class="p-4">Your browser does not support the video tag.</p>
               </video>
+            </div>
 
-              <!-- Video 5 -->
+            <!-- v5 -->
+            <div
+              class="gradient-card rounded-2xl overflow-hidden shadow-lg border border-gray-200 p-3"
+            >
               <video
-                class="w-full h-full"
+                id="v5"
+                class="video-js vjs-default-skin vjs-fluid w-full h-full"
                 controls
                 preload="metadata"
                 playsinline
+                webkit-playsinline
+                data-setup='{"fluid": true, "aspectRatio":"16:9", "preload":"metadata"}'
               >
                 <source src="./03.mp4" type="video/mp4" />
-                <!-- Fallback -->
-                <track kind="captions" srclang="en" label="English" />
-                <p class="p-4 text-white">
-                  Your browser does not support the video tag.
-                </p>
+                <p class="p-4">Your browser does not support the video tag.</p>
               </video>
+            </div>
 
-              <!-- Video 6 -->
+            <!-- v6 -->
+            <div
+              class="gradient-card rounded-2xl overflow-hidden shadow-lg border border-gray-200 p-3"
+            >
               <video
-                class="w-full h-full"
+                id="v6"
+                class="video-js vjs-default-skin vjs-fluid w-full h-full"
                 controls
                 preload="metadata"
                 playsinline
+                webkit-playsinline
+                data-setup='{"fluid": true, "aspectRatio":"16:9", "preload":"metadata"}'
               >
                 <source src="./04.mp4" type="video/mp4" />
-                <!-- Fallback -->
-                <track kind="captions" srclang="en" label="English" />
-                <p class="p-4 text-white">
-                  Your browser does not support the video tag.
-                </p>
+                <p class="p-4">Your browser does not support the video tag.</p>
+              </video>
+            </div>
+          </div>
+
+          <!-- SAME SECTION: 2nd video alone on its own line -->
+          <div class="mt-10">
+            <div
+              class="gradient-card rounded-2xl overflow-hidden shadow-lg border border-gray-200 p-3"
+            >
+              <video
+                id="v2"
+                class="video-js vjs-default-skin vjs-fluid w-full h-full"
+                controls
+                preload="metadata"
+                playsinline
+                webkit-playsinline
+                data-setup='{"fluid": true, "aspectRatio":"9:16", "preload":"metadata"}'
+              >
+                <source src="./2.mp4" type="video/mp4" />
+                <p class="p-4">Your browser does not support the video tag.</p>
               </video>
             </div>
           </div>
@@ -1829,6 +1850,24 @@ Interests: ${interests}`;
           { passive: true }
         );
       })();
+    </script>
+
+    <!-- Video.js (JS) -->
+    <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+    <script>
+      // Mobile-friendly defaults for all players on the page
+      document.querySelectorAll(".video-js").forEach(function (el) {
+        videojs(el, {
+          fluid: true, // keep 16:9 fluid scaling
+          responsive: true,
+          preload: "metadata",
+          controls: true,
+          controlBar: {
+            volumePanel: { inline: false }, // larger, thumb-friendly volume
+            remainingTimeDisplay: false,
+          },
+        });
+      });
     </script>
   </body>
 </html>
